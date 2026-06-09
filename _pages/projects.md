@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 科研项目
+title: Projects
 permalink: /projects/
 description: Selected research projects.
 nav: false

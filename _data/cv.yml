@@ -1,11 +1,11 @@
 cv:
-  name: 谭臻至
-  label: 清华大学化学系博士研究生 · AI4Science / AI4Chem
+  name: Zhenzhi Tan
+  label: Ph.D. Student in Chemistry, Tsinghua University · AI4Science / AI4Chem
   email: tzz24@mails.tsinghua.edu.cn
   phone: (+86) 133-1027-7774
-  location: 北京，中国
-  image: assets/img/profile.png
-  summary: 清华大学化学系、基础分子科学中心在读博士研究生，研究方向为有机化学与 AI4Science，关注数据驱动的有机合成反应发现、主动学习优化、自动化 DFT 描述符计算与模型可靠性评估。
+  location: Beijing, China
+  image: assets/img/profile.jpg
+  summary: Ph.D. student at the Department of Chemistry and the Center of Basic Molecular Science, Tsinghua University, working at the intersection of organic chemistry and AI4Science. Research interests include data-driven organic reaction discovery, active learning optimization, automated DFT descriptor workflows, and model reliability assessment.
 
   social_networks:
     - network: GitHub
@@ -14,79 +14,79 @@ cv:
       username: Zhenzhi Tan
 
   sections:
-    教育背景:
-      - institution: 清华大学，化学系，基础分子科学中心
-        area: 有机化学（AI4Science）
-        studyType: 在读博士研究生
+    Education:
+      - institution: Center of Basic Molecular Science, Department of Chemistry, Tsinghua University
+        area: Organic Chemistry (AI4Science)
+        studyType: Ph.D. Student
         start_date: 2024-09
-        end_date: 至今
+        end_date: Present
         highlights:
-          - 导师：罗三中教授
+          - "Advisor: Prof. Sanzhong Luo"
 
-      - institution: 清华大学，化学系
-        area: 化学
-        studyType: 理学学士
+      - institution: Department of Chemistry, Tsinghua University
+        area: Chemistry
+        studyType: B.S.
         start_date: 2020-09
         end_date: 2024-07
-        score: GPA 3.90/4.00（排名 2/25）
+        score: "GPA: 3.90/4.00 (Rank: 2/25)"
         highlights:
-          - 清华大学优秀毕业生
+          - Outstanding Graduate of Tsinghua University
 
-    科研项目:
-      - company: 数据驱动的协同催化反应发现与主动学习优化平台
-        position: 共同第一作者 / 项目负责人（NSFC 博士研究生项目）
+    Research Experience:
+      - company: Data-Driven Discovery & Active Learning for Cooperative Catalysis
+        position: Co-first author / project leader (NSFC Ph.D. project)
         start_date: 2024-03
-        end_date: 至今
+        end_date: Present
         summary: Nature Synth. (2026)
         highlights:
-          - 针对小样本、高噪声的有机合成实验场景，设计并开发基于贝叶斯优化的主动学习算法，解决高维复杂化学空间的搜索难题。
-          - 实现自动化 DFT 计算描述符提取工作流，适配贝叶斯优化算法，打通从“反应设计-分子特征提取-主动学习优化”的一站式全链路优化平台。
-          - 仅通过 63 次合成实验，完成超 180 万规模反应空间的全局优化，显著提升反应发现效率。
+          - Developed Bayesian optimization algorithms tailored for small-sample, high-noise organic synthesis, addressing search challenges in high-dimensional chemical spaces.
+          - Implemented an automated DFT descriptor extraction pipeline integrated with Bayesian optimization, enabling a one-stop reaction design, feature extraction, and active learning optimization platform.
+          - Achieved global optimization of a 1.8-million reaction space within only 63 experiments, significantly accelerating reaction discovery.
 
-      - company: 高精度 Ullmann 反应预测模型与 SynAD 算法可靠性框架
-        position: 第一作者 / 项目负责人（NSFC 本科生项目）
+      - company: Ullmann Reaction Prediction & SynAD Reliability Framework
+        position: First author / project leader (NSFC undergraduate project)
         start_date: 2023-09
         end_date: 2025-10
         summary: Angew. Chem. Int. Ed. (2026)
         highlights:
-          - 深度融合物理有机化学知识，系统开发自动化 DFT 计算描述符计算流程，主导构建高精度 Ullmann 反应产率预测模型。
-          - 针对 AI 模型在化学合成中的“外推陷阱”，创新性提出 Synthetic Applicability Domain (SynAD) 框架，建立模型在未知化学空间中的不确定性评估机制。
-          - 在 Ullmann 反应数据集等 7 个自建与公开数据集上对框架进行严格评估，证明 SynAD 能有效过滤不可靠预测结果，提高模型可靠性。
+          - Built a high-accuracy Ullmann reaction yield prediction model by integrating physical organic chemistry knowledge with automated DFT-based descriptor computation.
+          - Proposed the Synthetic Applicability Domain (SynAD) framework to address the extrapolation trap of AI in chemical synthesis and establish uncertainty assessment in unknown chemical spaces.
+          - Validated the framework on seven in-house and public datasets, showing that SynAD effectively filters unreliable predictions and improves model reliability.
 
-      - company: 基于计算机视觉的高分子共聚物相容性预测
-        position: 第二作者
+      - company: Computer Vision for Polymer Miscibility Prediction
+        position: Second author
         start_date: 2022-05
         end_date: 2023-07
         summary: J. Chem. Inf. Model. (2023)
         highlights:
-          - 构建深度卷积神经网络（CNN）视觉模型，实现对聚合物 SEM 微观图像的大规模特征自动提取。
-          - 完成材料相容性等核心物理性质的快速自动表征，替代传统低效的人工分析流程。
+          - Constructed a deep convolutional neural network (CNN) visual model to automatically extract high-level features from SEM microscopic images of polymer blends.
+          - Enabled rapid automatic characterization of miscibility and related material properties, replacing inefficient manual analysis workflows.
 
-    个人技能:
-      - name: 编程与开发
-        keywords: Python（PyTorch, Scikit-learn, Numpy, Pandas）, C++（基础）, SQL, Linux/Bash, Git
+    Skills:
+      - name: Programming
+        keywords: Python (PyTorch, Scikit-learn, Numpy, Pandas), C++ (basic), SQL, Linux/Bash, Git
       - name: AI4Chem
-        keywords: RDKit, DeepChem, DFT 计算（Gaussian, ORCA, xTB）
+        keywords: RDKit, DeepChem, DFT calculations (Gaussian, ORCA, xTB)
 
-    学术活动与个人荣誉:
-      - title: 第 74 届林岛诺贝尔奖获得者大会青年科学家代表
+    Honors & Awards:
+      - title: Participant, 74th Lindau Nobel Laureate Meeting
         date: 2025
-      - title: Best Poster Award at Nature Conference on Automation for Chemistry
+      - title: Best Poster Award, Nature Conference on Automation for Chemistry
         date: 2025
-      - title: Best Poster Award at International Conference of Computational Organic-synthesis Catalysis
+      - title: Best Poster Award, International Conference of Computational Organic-synthesis Catalysis
         date: 2025
-      - title: 侯德榜奖学金
+      - title: T. P. Hou Award
         date: 2024
-      - title: 清华大学优秀毕业生
+      - title: Outstanding Graduate of Tsinghua University
         date: 2024
-      - title: 国家奖学金
+      - title: National Scholarship
         date: 2022
-      - title: 清华大学综合奖学金
+      - title: Tsinghua University Comprehensive Scholarship
         date: 2021
-      - title: 第 33 届中国化学奥林匹克（CChO）金牌
+      - title: Gold Medal, 33rd Chinese Chemistry Olympiad (CChO)
         date: 2019
 
-    论文列表:
+    Publications:
       - title: "Synthetic Applicability Domain (SynAD): Navigating Chemical Space for Reliable AI-Driven Reaction Prediction"
         authors:
           - Z. Tan
