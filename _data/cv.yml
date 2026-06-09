@@ -1,0 +1,128 @@
+cv:
+  name: Zhenzhi Tan
+  label: Ph.D. Student in Chemistry, Tsinghua University · AI4Science / AI4Chem
+  email: tzz24@mails.tsinghua.edu.cn
+  phone: (+86) 133-1027-7774
+  location: Beijing, China
+  image: assets/img/profile.jpg
+  summary: Ph.D. student at the Department of Chemistry and the Center of Basic Molecular Science, Tsinghua University, working at the intersection of organic chemistry and AI4Science. Research interests include data-driven organic reaction discovery, active learning optimization, automated DFT descriptor workflows, and model reliability assessment.
+
+  social_networks:
+    - network: GitHub
+      username: BoeingART
+    - network: LinkedIn
+      username: Zhenzhi Tan
+
+  sections:
+    Education:
+      - institution: Center of Basic Molecular Science, Department of Chemistry, Tsinghua University
+        area: Organic Chemistry (AI4Science)
+        studyType: Ph.D. Student
+        start_date: 2024-09
+        end_date: Present
+        highlights:
+          - "Advisor: Prof. Sanzhong Luo"
+
+      - institution: Department of Chemistry, Tsinghua University
+        area: Chemistry
+        studyType: B.S.
+        start_date: 2020-09
+        end_date: 2024-07
+        score: "GPA: 3.90/4.00 (Rank: 2/25)"
+        highlights:
+          - Outstanding Graduate of Tsinghua University
+
+    Research Experience:
+      - company: Data-Driven Discovery & Active Learning for Cooperative Catalysis
+        position: Co-first author / project leader (NSFC Ph.D. project)
+        start_date: 2024-03
+        end_date: Present
+        summary: Nature Synth. (2026)
+        highlights:
+          - Developed Bayesian optimization algorithms tailored for small-sample, high-noise organic synthesis, addressing search challenges in high-dimensional chemical spaces.
+          - Implemented an automated DFT descriptor extraction pipeline integrated with Bayesian optimization, enabling a one-stop reaction design, feature extraction, and active learning optimization platform.
+          - Achieved global optimization of a 1.8-million reaction space within only 63 experiments, significantly accelerating reaction discovery.
+
+      - company: Ullmann Reaction Prediction & SynAD Reliability Framework
+        position: First author / project leader (NSFC undergraduate project)
+        start_date: 2023-09
+        end_date: 2025-10
+        summary: Angew. Chem. Int. Ed. (2026)
+        highlights:
+          - Built a high-accuracy Ullmann reaction yield prediction model by integrating physical organic chemistry knowledge with automated DFT-based descriptor computation.
+          - Proposed the Synthetic Applicability Domain (SynAD) framework to address the extrapolation trap of AI in chemical synthesis and establish uncertainty assessment in unknown chemical spaces.
+          - Validated the framework on seven in-house and public datasets, showing that SynAD effectively filters unreliable predictions and improves model reliability.
+
+      - company: Computer Vision for Polymer Miscibility Prediction
+        position: Second author
+        start_date: 2022-05
+        end_date: 2023-07
+        summary: J. Chem. Inf. Model. (2023)
+        highlights:
+          - Constructed a deep convolutional neural network (CNN) visual model to automatically extract high-level features from SEM microscopic images of polymer blends.
+          - Enabled rapid automatic characterization of miscibility and related material properties, replacing inefficient manual analysis workflows.
+
+    Skills:
+      - name: Programming
+        keywords: Python (PyTorch, Scikit-learn, Numpy, Pandas), C++ (basic), SQL, Linux/Bash, Git
+      - name: AI4Chem
+        keywords: RDKit, DeepChem, DFT calculations (Gaussian, ORCA, xTB)
+
+    Honors & Awards:
+      - title: Participant, 74th Lindau Nobel Laureate Meeting
+        date: 2025
+      - title: Best Poster Award, Nature Conference on Automation for Chemistry
+        date: 2025
+      - title: Best Poster Award, International Conference of Computational Organic-synthesis Catalysis
+        date: 2025
+      - title: T. P. Hou Award
+        date: 2024
+      - title: Outstanding Graduate of Tsinghua University
+        date: 2024
+      - title: National Scholarship
+        date: 2022
+      - title: Tsinghua University Comprehensive Scholarship
+        date: 2021
+      - title: Gold Medal, 33rd Chinese Chemistry Olympiad (CChO)
+        date: 2019
+
+    Publications:
+      - title: "Synthetic Applicability Domain (SynAD): Navigating Chemical Space for Reliable AI-Driven Reaction Prediction"
+        authors:
+          - Z. Tan
+          - Q. Yang
+          - L. Zhang
+          - S. Luo
+        publisher: Angew. Chem. Int. Ed. 2026, e23874
+        releaseDate: 2026
+        summary: 10.1002/anie.202523874
+
+      - title: "Heuristic Data-Driven Approach for Synergistic Cobalt(IV)-Enamine Catalysis"
+        authors:
+          - L. Cheng
+          - Z. Tan
+          - Z. Jia
+          - Q. Lin
+          - Q. Yang
+          - S. Luo
+        publisher: Nature Synth. 2025, 10.1038/s44160-025-00944-y
+        releaseDate: 2025
+
+      - title: "AI Molecular Catalysis: Where Are We Now?"
+        authors:
+          - Z. Tan
+          - Q. Yang
+          - S. Luo
+        publisher: Org. Chem. Front. 2025, 12, 2759-2776
+        releaseDate: 2025
+
+      - title: "Automatically Predicting Material Properties with Microscopic Images: Polymer Miscibility as an Example"
+        authors:
+          - Z. Liang
+          - Z. Tan
+          - R. Hong
+          - W. Ouyang
+          - J. Yuan
+          - C. Zhang
+        publisher: J. Chem. Inf. Model. 2023, 63, 5971-5980
+        releaseDate: 2023

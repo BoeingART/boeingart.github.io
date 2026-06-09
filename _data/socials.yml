@@ -1,0 +1,10 @@
+# Social links displayed by al-folio.
+cv_pdf: /assets/pdf/Zhenzhi_Tan_Resume-cn.pdf
+email: tzz24@mails.tsinghua.edu.cn
+github_username: BoeingART
+linkedin_username: Zhenzhi-Tan
+rss_icon: false
+custom_social:
+  logo: /assets/img/profile.jpg
+  title: English CV
+  url: /assets/pdf/Zhenzhi_Tan_Resume-en.pdf
