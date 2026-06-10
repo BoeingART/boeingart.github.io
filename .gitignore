@@ -15,4 +15,5 @@ node_modules/
 output/playwright/
 test-results/
 vendor
-.github/workflows/
+.github/workflows/*
+!.github/workflows/deploy.yml
