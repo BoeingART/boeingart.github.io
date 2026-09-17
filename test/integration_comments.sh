@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if [ ! -f "_posts/2022-12-10-giscus-comments.md" ]; then
+  echo "comments integration checks skipped: this site does not use the demo posts."
+  exit 0
+fi
+
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/comments-test-override.yml"
 tmp_site="${tmp_dir}/site"

@@ -1,5 +1,11 @@
+const fs = require("node:fs");
+const path = require("node:path");
 const { test, expect } = require("@playwright/test");
 const { preparePage, stabilizeVisuals, compareWithBaseline } = require("./helpers");
+
+test.beforeEach(() => {
+  test.skip(!fs.existsSync(path.resolve(__dirname, "../../_posts/2018-12-22-distill.md")), "This site does not use Distill demo posts.");
+});
 
 for (const theme of ["light", "dark"]) {
   test(`distill style remains stable after load (${theme})`, async ({ page }) => {

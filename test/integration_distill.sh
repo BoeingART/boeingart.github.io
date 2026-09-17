@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if [ ! -f "_posts/2018-12-22-distill.md" ]; then
+  echo "distill integration checks skipped: this site does not use the demo posts."
+  exit 0
+fi
+
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
 tmp_site="${tmp_dir}/site"
