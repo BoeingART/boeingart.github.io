@@ -1,37 +1,47 @@
 :root {
-  --global-theme-color: #078993;
-  --global-hover-color: #f35767;
-  --global-bg-color: #fbfffb;
-  --global-text-color: #17313b;
+  --global-theme-color: #2879a5;
+  --global-hover-color: #185b82;
+  --global-bg-color: #ffffff;
+  --global-text-color: #252525;
   --global-card-bg-color: #ffffff;
-  --global-footer-bg-color: #16566a;
-  --global-footer-text-color: #dff7d9;
-  --global-divider-color: rgba(22, 86, 106, 0.18);
-  --site-deep-teal: #16566a;
-  --site-teal: #078993;
-  --site-mint: #dff7d9;
-  --site-steel: #4e739d;
-  --site-coral: #f35767;
+  --global-footer-bg-color: #edf6fc;
+  --global-footer-text-color: #40586b;
+  --global-footer-link-color: #2879a5;
+  --global-divider-color: #d7e7f1;
+  --site-accent-color: #96cceb;
+  --site-heading-color: #263e50;
+  /* Nature's published font stack. Harding is used when installed; otherwise
+     use its official Palatino fallback without fetching proprietary font files.
+     https://eds.springernature.com/design-tokens/nature/typography/ */
+  --site-text-font: Harding, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  --site-ui-font:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
 }
 
 html[data-theme="dark"] {
-  --global-theme-color: #42c3c6;
-  --global-hover-color: #ff6b78;
-  --global-bg-color: #102f3a;
-  --global-text-color: #ecf7ef;
-  --global-card-bg-color: #153f4d;
-  --global-footer-bg-color: #0c252e;
-  --global-footer-text-color: #dff7d9;
-  --global-divider-color: rgba(223, 247, 217, 0.18);
+  --global-theme-color: #96cceb;
+  --global-hover-color: #c8e6f8;
+  --global-bg-color: #181818;
+  --global-text-color: #ededed;
+  --global-card-bg-color: #242424;
+  --global-footer-bg-color: #202020;
+  --global-footer-text-color: #d4d4d4;
+  --global-footer-link-color: #96cceb;
+  --global-divider-color: #3a4248;
+  --site-heading-color: #c8e6f8;
 }
 
 body {
-  background: linear-gradient(90deg, rgba(223, 247, 217, 0.32), rgba(223, 247, 217, 0) 36rem), var(--global-bg-color);
+  background: var(--global-bg-color);
   color: var(--global-text-color);
+  font-family: var(--site-text-font);
+  font-weight: 400;
+  line-height: 1.618;
 }
 
 body::before {
-  background: linear-gradient(90deg, #16566a 0 20%, #078993 20% 40%, #dff7d9 40% 60%, #4e739d 60% 80%, #f35767 80% 100%);
+  background: var(--site-accent-color);
   content: "";
   height: 5px;
   left: 0;
@@ -39,6 +49,22 @@ body::before {
   right: 0;
   top: 0;
   z-index: 1050;
+}
+
+.navbar,
+button,
+input,
+select,
+textarea,
+.btn,
+.badge,
+.post-meta,
+.profile-contact,
+.publications .author,
+.publications .periodical,
+footer,
+ninja-keys {
+  font-family: var(--site-ui-font);
 }
 
 a,
@@ -58,16 +84,8 @@ a:hover,
 .navbar,
 nav.navbar {
   background-color: var(--global-bg-color);
-  background-color: color-mix(in srgb, var(--global-bg-color) 92%, white);
   border-bottom: 1px solid var(--global-divider-color);
-  box-shadow: 0 8px 24px rgba(22, 86, 106, 0.08);
-}
-
-html[data-theme="dark"] .navbar,
-html[data-theme="dark"] nav.navbar {
-  background-color: var(--global-bg-color);
-  background-color: color-mix(in srgb, var(--global-bg-color) 92%, black);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: none;
 }
 
 h1,
@@ -76,18 +94,11 @@ h3,
 h4,
 h5,
 h6,
-.header-bar h1 {
-  color: var(--site-deep-teal);
-}
-
-html[data-theme="dark"] h1,
-html[data-theme="dark"] h2,
-html[data-theme="dark"] h3,
-html[data-theme="dark"] h4,
-html[data-theme="dark"] h5,
-html[data-theme="dark"] h6,
-html[data-theme="dark"] .header-bar h1 {
-  color: var(--site-mint);
+.header-bar h1,
+.publications .title {
+  color: var(--site-heading-color);
+  font-family: var(--site-text-font);
+  line-height: 1.2;
 }
 
 .profile,
@@ -109,8 +120,8 @@ img.profile {
 }
 
 .profile-contact {
-  border-left: 3px solid var(--site-teal);
-  color: color-mix(in srgb, var(--global-text-color) 82%, var(--site-steel));
+  border-left: 3px solid var(--site-accent-color);
+  color: var(--global-text-color);
   display: grid;
   gap: 0.2rem;
   line-height: 1.45;
@@ -226,7 +237,7 @@ input[type="submit"]:hover,
 
 blockquote,
 .post blockquote {
-  border-left-color: var(--site-coral);
+  border-left-color: var(--site-accent-color);
 }
 
 hr {
@@ -241,9 +252,9 @@ footer.fixed-bottom {
 
 footer a,
 footer a:visited {
-  color: var(--site-mint);
+  color: var(--global-footer-link-color);
 }
 
 footer a:hover {
-  color: var(--site-coral);
+  color: var(--global-hover-color);
 }
