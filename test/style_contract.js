@@ -61,7 +61,17 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+// This site's bibliography extension uses the core's hook without copying its template.
+if (exists("_includes")) {
+  for (const entry of fs.readdirSync(path.join(root, "_includes"), { recursive: true, withFileTypes: true })) {
+    const relativePath = path.relative(root, path.join(entry.parentPath || entry.path, entry.name));
+    if (!["_includes/hook", "_includes/hook/bib.liquid"].includes(relativePath)) {
+      failures.push(`Starter must not own core component path \`${relativePath}\`; move ownership to the corresponding gem.`);
+    }
+  }
+}
+
+for (const forbiddenPath of ["_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }

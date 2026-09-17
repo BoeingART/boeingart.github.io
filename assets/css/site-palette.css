@@ -142,6 +142,82 @@ img.profile {
   justify-content: flex-start;
 }
 
+/* The bibliography hook supplies the DOI link beside the entry text. */
+.publications .row > div:has(> .publication-doi) {
+  min-width: 0;
+  padding-right: 3.25rem !important;
+  position: relative;
+}
+
+.publications .publication-doi {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: -0.5rem;
+}
+
+.publications ol.bibliography .publication-doi {
+  color: var(--site-heading-color);
+}
+
+/* Nature-inspired open arrow: consistent strokes, independent of font glyphs. */
+.publications .publication-doi span {
+  display: block;
+  font-size: 0;
+  height: 1.25rem;
+  position: relative;
+  width: 1.375rem;
+}
+
+.publications .publication-doi span::before,
+.publications .publication-doi span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+}
+
+.publications .publication-doi span::before {
+  background: currentColor;
+  border-radius: 1px;
+  height: 1.5px;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.publications .publication-doi span::after {
+  border-right: 1.5px solid currentColor;
+  border-top: 1.5px solid currentColor;
+  height: 0.5625rem;
+  right: 0;
+  transform: translateY(-50%) rotate(45deg);
+  transform-origin: center;
+  width: 0.5625rem;
+}
+
+.publications ol.bibliography .publication-doi:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
+.publications .publication-doi:focus-visible {
+  border-radius: 0.2rem;
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+
+/* Hide the theme's original DOI button and omit a DOI-only button row. */
+.publications .links a[href^="https://doi.org/"],
+.publications .links:not(:has(a:not([href^="https://doi.org/"]))) {
+  display: none;
+}
+
 .publications .abbr abbr.badge {
   align-items: center !important;
   background: var(--global-text-color) !important;
@@ -215,6 +291,14 @@ html[data-theme="dark"] .publications .abbr abbr.badge {
 
   .publications .abbr {
     margin-bottom: 0.45rem;
+  }
+
+  .publications .row > div:has(> .publication-doi) {
+    padding-right: 4rem !important;
+  }
+
+  .publications .publication-doi {
+    right: 0.75rem;
   }
 }
 

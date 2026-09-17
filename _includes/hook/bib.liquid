@@ -1,0 +1,10 @@
+{% if entry.doi %}
+  <a
+    class="publication-doi"
+    href="https://doi.org/{{ entry.doi }}"
+    aria-label="Read {{ entry.title | strip_html | escape }} (DOI)"
+    title="Read publication"
+  >
+    <span aria-hidden="true">→</span>
+  </a>
+{% endif %}
