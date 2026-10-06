@@ -10,13 +10,9 @@
   --global-divider-color: #d7e7f1;
   --site-accent-color: #96cceb;
   --site-heading-color: #263e50;
-  /* Nature's published font stack. Harding is used when installed; otherwise
-     use its official Palatino fallback without fetching proprietary font files.
-     https://eds.springernature.com/design-tokens/nature/typography/ */
-  --site-text-font: Harding, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Songti SC", "Noto Serif CJK SC", serif;
-  --site-ui-font:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "PingFang SC", "Microsoft YaHei",
-    sans-serif;
+  --site-text-font: "Noto Sans", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --site-heading-font: "Barlow", var(--site-text-font);
+  --site-ui-font: var(--site-text-font);
 }
 
 html[data-theme="dark"] {
@@ -97,7 +93,7 @@ h6,
 .header-bar h1,
 .publications .title {
   color: var(--site-heading-color);
-  font-family: var(--site-text-font);
+  font-family: var(--site-heading-font);
   line-height: 1.2;
 }
 
