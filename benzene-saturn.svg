@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1280" viewBox="0 0 1280 1280" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Benzene Saturn icon</title>
+  <desc id="desc">A light blue benzene ring encircled by a tilted Saturn ring on a transparent background.</desc>
+  <defs>
+    <mask id="behind-benzene" x="0" y="0" width="1280" height="1280" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" style="mask-type: luminance">
+      <rect width="1280" height="1280" fill="white"/>
+      <path d="M 625 366 L 859 501 L 859 771 L 625 906 L 391 771 L 391 501 Z" fill="black" stroke="black" stroke-width="46"/>
+    </mask>
+  </defs>
+  <g fill="#6CACE4">
+    <!-- The far side of the planetary ring passes behind the benzene. -->
+    <g mask="url(#behind-benzene)">
+      <path transform="translate(632 645) rotate(-20)" fill-rule="evenodd" d="M -590 0 A 590 135 0 1 0 590 0 A 590 135 0 1 0 -590 0 Z M -515 0 A 515 89 0 1 0 515 0 A 515 89 0 1 0 -515 0 Z"/>
+    </g>
+    <!-- Hexagonal skeleton and three alternating double bonds. -->
+    <g fill="none" stroke="#6CACE4">
+      <path stroke-width="46" stroke-linejoin="miter" d="M 625 366 L 859 501 L 859 771 L 625 906 L 391 771 L 391 501 Z"/>
+      <path stroke-width="34" stroke-linecap="round" d="M 460 539 L 615 450 M 803 559 L 803 701 M 459 727 L 614 816"/>
+    </g>
+    <!-- The near side crosses in front, completing a single Saturn ring. -->
+    <path transform="translate(632 645) rotate(-20)" d="M -590 0 A 590 135 0 0 0 590 0 L 515 0 A 515 89 0 0 1 -515 0 Z"/>
+  </g>
+</svg>
