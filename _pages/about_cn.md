@@ -28,7 +28,7 @@ latest_posts:
   <a href="mailto:tzz24@mails.tsinghua.edu.cn">tzz24@mails.tsinghua.edu.cn</a>
 </div>
 
-[:gb: English home](/) · [中文 CV](/assets/pdf/Zhenzhi_Tan_Resume-cn.pdf) · [English CV](/assets/pdf/Zhenzhi_Tan_Resume-en.pdf)
+[:gb: English](/) · [中文 CV](/assets/pdf/Zhenzhi_Tan_Resume-cn.pdf) · [English CV](/assets/pdf/Zhenzhi_Tan_Resume-en.pdf)
 
 ## 教育背景
 

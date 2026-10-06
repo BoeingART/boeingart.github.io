@@ -83,7 +83,7 @@ test("core pages no longer emit jQuery-style runtime errors", async ({ page }) =
   });
 
   await preparePage(page, "light");
-  const pages = ["/al-folio/", "/al-folio/cn/", "/al-folio/publications/", "/al-folio/cv/"];
+  const pages = ["/al-folio/", "/al-folio/cn/", "/al-folio/publications/"];
 
   for (const target of pages) {
     await page.goto(target, { waitUntil: "networkidle" });

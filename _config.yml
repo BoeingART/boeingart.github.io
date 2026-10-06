@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Zhenzhi
 middle_name:
 last_name: Tan
-contact_note: >
-  Email is the best way to reach me.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Zhenzhi Tan is a Ph.D. student in organic chemistry at Tsinghua University, working on AI4Science and AI4Chem.
 footer_text: >
@@ -252,7 +251,6 @@ plugins:
   # al-folio plugins
   - al_folio_core
   - al_icons
-  - al_folio_cv
   - al_folio_distill
   - al_folio_upgrade
   - al_folio_bootstrap_compat

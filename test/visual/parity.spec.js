@@ -5,7 +5,6 @@ const routes = [
   { path: "al-folio/", id: "home" },
   { path: "al-folio/cn/", id: "cn" },
   { path: "al-folio/publications/", id: "publications" },
-  { path: "al-folio/cv/", id: "cv" },
 ];
 
 test.beforeEach(async ({}, testInfo) => {
